@@ -26,12 +26,12 @@ teamspeak_sql
  - TS_DB_PASSWORD teamspeak
 
 #### Exposed Ports
-Port | Type | Function
---- | ---
-9987 | UDP in | Default voice port
-10011 | TCP in | Default serverquery port
-30033 | TCP in | Default filetransfer port
-41144 | TCP in | Default tsdns port
+| Port | Type | Function |
+| --- | --- | --- |
+| 9987 | UDP in | Default voice port |
+| 10011 | TCP in | Default serverquery port |
+| 30033 | TCP in | Default filetransfer port |
+| 41144 | TCP in | Default tsdns port |
 
 ## Docker-compose
 
