@@ -2,7 +2,7 @@
 
 set -e
 
-until mysql -h"$TS_DB_HOST" -P"$TS_DB_PORT" -u"$TS_DB_USER" -p"$TS_DB_PASSWORD" -e "use $TS_DB_NAME"; do
+until (echo > /dev/tcp/${TS_DB_HOST}/${TS_DB_PORT}) >/dev/null 2>&1; do
     >&2 echo "SQL is unavailable - sleeping"
     sleep 3
 done
