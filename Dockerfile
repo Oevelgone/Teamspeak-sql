@@ -9,7 +9,7 @@ ENV TS_DB_PASSWORD teamspeak
 
 USER root
 
-RUN apt-get update && apt-get install mysql-client
+RUN apt-get update && apt-get install -y mysql-client
 
 # Adding SQL configuration files
 ADD build/ts3db_sql.ini /opt/teamspeak/ts3db_sql.ini
