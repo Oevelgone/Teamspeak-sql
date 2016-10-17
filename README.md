@@ -49,7 +49,7 @@ services:
       MYSQL_PASSWORD: teamspeak
 
   teamspeak:
-    image: oevelgone/teamspeak-sql:lastest
+    image: oevelgone/teamspeak-sql:latest
     depends_on:
       - db
     links:
